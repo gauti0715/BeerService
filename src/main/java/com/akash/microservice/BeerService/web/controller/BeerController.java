@@ -22,7 +22,7 @@ public class BeerController {
     return new ResponseEntity(BeerDto.builder().build(), HttpStatus.OK);
   }
 
-  @PostMapping("/{beerId}")
+  @PostMapping
   public ResponseEntity saveNewBeer(@RequestBody BeerDto beerDto){
     // todo impl
     return new ResponseEntity(BeerDto.builder().build(), HttpStatus.CREATED);
